@@ -1,0 +1,46 @@
+body {
+  background: #ccc;
+  font-family: 'Roboto', sans-serif;
+}
+.title{
+  border: solid;
+  background-color: black;
+  color: white;
+  margin: -5px;
+  padding: 20px;
+}
+.Autotab {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 426px;
+  margin: 50px auto;
+  padding: 50px;
+}
+.Autotab input[type="radio"] {
+  display: none;
+}
+.Autotab label {
+  color: gray;
+  padding: 25px;
+  background: black;
+  font-weight: bold;
+}
+
+.Autotab .tab {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  order: 1;
+  display: none;
+}
+.Autotab .tab h2 {
+  font-size: 3em;
+}
+
+.Autotab input[type='radio']:checked + label + .tab {
+  display: block;
+}
+
+.Autotab input[type="radio"]:checked + label {
+  background: #fff;
+}
