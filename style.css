@@ -1,46 +1,41 @@
 body {
-  background: #ccc;
-  font-family: 'Roboto', sans-serif;
+  background: black;
 }
-.title{
-  border: solid;
-  background-color: black;
-  color: white;
-  margin: -5px;
-  padding: 20px;
+h1 {
+  color: black;
+  background-color: whitesmoke;
+  text-align: left;
+  font-family: cursive;
 }
-.Autotab {
+.contanier {
+  border: solid white 1px;
+}
+
+.navbar {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 426px;
-  margin: 50px auto;
+  justify-content: space-evenly;
+  border: solid whitesmoke;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+.btns:hover {
+  transition: 2s;
+  background-color: green;
+}
+
+.tag {
   padding: 50px;
 }
-.Autotab input[type="radio"] {
-  display: none;
-}
-.Autotab label {
-  color: gray;
-  padding: 25px;
-  background: black;
-  font-weight: bold;
+.text-box {
+  border: white;
+  height: 500px;
+  padding: 50px;
+  text-align: center;
 }
 
-.Autotab .tab {
-  width: 100%;
-  padding: 20px;
-  background: #fff;
-  order: 1;
-  display: none;
-}
-.Autotab .tab h2 {
-  font-size: 3em;
-}
-
-.Autotab input[type='radio']:checked + label + .tab {
-  display: block;
-}
-
-.Autotab input[type="radio"]:checked + label {
-  background: #fff;
+img {
+  text-align: center;
+  padding: 10px;
+  height: 400px;
+  text-align: center;
 }
